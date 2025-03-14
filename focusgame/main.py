@@ -3,13 +3,12 @@ import random
 import sys
 
 pygame.init()
-pygame.mixer.init()  # Initialize the mixer for sound
+pygame.mixer.init()
 
-# Load background music and sound effects
-pygame.mixer.music.load('focusgame/tetris.mp3')  # Make sure the path to the music file is correct
-hit_sound = pygame.mixer.Sound('focusgame/hit.mp3')  # Load the hit sound effect
+pygame.mixer.music.load('focusgame/tetris.mp3')
+hit_sound = pygame.mixer.Sound('focusgame/hit.mp3')
 
-pygame.mixer.music.play(-1, 0.0)  # Play background music indefinitely
+pygame.mixer.music.play(-1, 0.0)
 
 WIDTH, HEIGHT = 300, 500
 FPS = 35
@@ -133,7 +132,7 @@ class Tetris:
         if self.collision():
             self.figure.y -= 1
             self.freeze()
-            hit_sound.play()  # Play hit sound when the block hits the ground
+            hit_sound.play()
 
     def left(self):
         self.figure.x -= 1
