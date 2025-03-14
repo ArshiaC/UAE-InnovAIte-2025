@@ -6,8 +6,8 @@ pygame.init()
 pygame.mixer.init()  # Initialize the mixer for sound
 
 # Load background music and sound effects
-pygame.mixer.music.load('empowermentgame/tetris.mp3')  # Make sure the path to the music file is correct
-hit_sound = pygame.mixer.Sound('empowermentgame/hit.mp3')  # Load the hit sound effect
+pygame.mixer.music.load('focusgame/tetris.mp3')  # Make sure the path to the music file is correct
+hit_sound = pygame.mixer.Sound('focusgame/hit.mp3')  # Load the hit sound effect
 
 pygame.mixer.music.play(-1, 0.0)  # Play background music indefinitely
 
@@ -31,10 +31,10 @@ LOSE = (235, 198, 195)
 TEXT = (102, 108, 183)
 
 ASSETS = {
-    1: pygame.image.load("empowermentgame/Assets/1.png"),
-    2: pygame.image.load("empowermentgame/Assets/2.png"),
-    3: pygame.image.load("empowermentgame/Assets/3.png"),
-    4: pygame.image.load("empowermentgame/Assets/4.png"),
+    1: pygame.image.load("focusgame/Assets/1.png"),
+    2: pygame.image.load("focusgame/Assets/2.png"),
+    3: pygame.image.load("focusgame/Assets/3.png"),
+    4: pygame.image.load("focusgame/Assets/4.png"),
 }
 
 font = pygame.font.SysFont("verdana", 50)
